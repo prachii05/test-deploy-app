@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello from DeployIt! 🚀', timestamp: new Date().toISOString() });
+  res.json({ message: 'Deployed via webhook! 🔥 🚀', timestamp: new Date().toISOString() });
 });
 
 app.get('/api/status', (req, res) => {
